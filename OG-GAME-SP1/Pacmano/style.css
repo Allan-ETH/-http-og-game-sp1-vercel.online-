@@ -1,0 +1,51 @@
+html{
+    overflow: hidden;
+}
+body{
+
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image:url("assets/background.png");
+    background-size:100vw 100vh;
+}
+canvas{
+
+}
+.mainBlock{
+    display: flex;
+    padding: 1.25vw 0.5vw 0.5vw;
+    background-color: rgb(200,200,200);
+
+}
+.c{
+    image-rendering: pixelated;
+    display: flex;
+    background-color: black;
+    width:85vw;
+    height:34vw;
+}
+.succicnt{
+    padding: 1.25vw;
+    font-family: Consolas, serif;
+    font-size: 5vw;
+    font-weight: bold;
+    text-shadow: rgba(0,0,0,0.6) 0 0.2vw 0.2vw;
+    letter-spacing: 0.2vw;
+    transition: transform 0.2s, color 0.3s, text-shadow 0.4s, letter-spacing 0.1s;
+    color: rgb(230, 20, 220);
+}
+.succicnt:hover{
+    text-shadow: rgba(0,0,0,0.55) 0 0.3vw 0.35vw;
+    transform: scale(1.1);
+    color: rgb(240, 90, 210);
+    letter-spacing: 0.5vw;
+}
+.succicnt:active{
+    text-shadow: rgba(0,0,0,0.7) 0 0.1vw 0.25vw;
+    transform: scale(0.9);
+    color: rgb(255, 120, 210);
+    letter-spacing: 0.3vw;
+}
